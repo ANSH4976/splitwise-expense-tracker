@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group Dashboard</title>
+  <link rel="stylesheet" href="dashs.css">
+</head>
+<body>
+
+  <div id="create_div">
+    <input id="name-el"  placeholder="group name" class="inp-el" type="text">
+    <input id="pass-el"  placeholder="password"  class="inp-el" type="text">
+    <button onclick="addGroup()">CREATE GROUP</button>
+  </div>
+
+  <div id="join_div" style="margin-top:8px;">
+    <input id="id-el"     placeholder="group id" class="inp-el" type="text">
+    <input id="pass-el2"  placeholder="password" class="inp-el" type="text">
+    <button onclick="joinGroup()">JOIN GROUP</button>
+  </div>
+<br>
+  <p id="msg-el" style="color:red;"></p>
+
+  <div id="header"><h2>Welcome, <span id="user-email"></span></h2></div>
+
+<div id="group-list-section">
+  <h3>Your Groups</h3>
+  <div id="a" class="group-list"></div>
+</div>
+
+
+<div id="group-detail-section">
+  <h3>Selected Group Details</h3>
+  <h4 id="conclusion"></h4>
+  <div id="b" class="group-info"></div>
+  <div id="c" class="group-transactions"></div>
+</div>
+
+
+
+  <script src="logic1.js"></script> 
+</body>
+</html>

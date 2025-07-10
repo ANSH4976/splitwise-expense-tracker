@@ -1,0 +1,65 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  padding: 20px 50px;
+}
+
+#create_div, #join_div, #group-list-section, #group-detail-section {
+  background-color: white;
+  margin: 20px 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inp-el {
+  background-color: #e9ecef;
+  margin: 10px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.inp-el:focus {
+  border: 1px solid #18b2af;
+}
+
+button {
+  background-color: #18b2af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #17a589;
+}
+
+.group-list > div,
+.group-info > div,
+.group-transactions > div {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.group-transactions span {
+  margin-left: 10px;
+}
+
+#msg-el2 {
+  font-size: xx-large;
+  font-weight: 500;
+}
