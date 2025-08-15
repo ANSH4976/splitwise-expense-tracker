@@ -68,7 +68,7 @@ function addGroup() {
         row.dataset.id = data.id;
         row1.innerHTML = `(ID: ${data.id})`;
         row.style.cursor = 'pointer';
-        row.addEventListener('click', () => redirect1(data.id)); // Pass ID here
+        row.addEventListener('click', () => redirect1(data.id)); 
 
         child.appendChild(row);
         child.appendChild(row1)
@@ -293,7 +293,7 @@ async function removeexpense(e) {
     amount:  e.target.parentElement.dataset.x,
     key:     e.target.parentElement.dataset.key
   };
-  console.log('▶️ removeexpense payload:', payload);
+  console.log('removeexpense payload:', payload);
 
   
 
@@ -305,15 +305,15 @@ async function removeexpense(e) {
 
   let result;
   try {
-  console.log('🔄 Calling response.json() to parse the body…');
+  console.log('Calling response.json() to parse the body…');
   result = await response.json();
-  console.log('✅ Parsed JSON result:', result);
+  console.log('Parsed JSON result:', result);
 } catch (err) {
-  console.error('❌ response.json() failed, raw text follows:', await response.text());
+  console.error('response.json() failed, raw text follows:', await response.text());
   result = { status: 'Invalid JSON' };
 }
 
-  console.log('🔄 /removeexpense response:', result);
+  console.log('/removeexpense response:', result);
 
   if (response.ok) {
     e.target.parentElement.remove();
